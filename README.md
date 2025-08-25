@@ -78,6 +78,15 @@ contains-studio-agents/
 │   ├── test-results-analyzer.md
 │   ├── tool-evaluator.md
 │   └── workflow-optimizer.md
+├── offrun-specialized/
+│   ├── ai-training-optimizer.md
+│   ├── battery-performance-guardian.md
+│   ├── flutter-fitness-developer.md
+│   ├── gps-fusion-expert.md
+│   ├── health-connect-master.md
+│   ├── interval-training-designer.md
+│   ├── offline-first-architect.md
+│   └── track-algorithm-specialist.md
 └── bonus/
     ├── joker.md
     └── studio-coach.md
@@ -91,7 +100,7 @@ contains-studio-agents/
 - **devops-automator** - Deploy continuously without breaking things
 - **frontend-developer** - Build blazing-fast user interfaces
 - **mobile-app-builder** - Create native iOS/Android experiences
-- **rapid-prototyper** - Build MVPs in days, not weeks
+- **rapid-prototyper** - Build MVPs within 6-day sprints
 - **test-writer-fixer** - Write tests that catch real bugs
 
 ### Product Department (`product/`)
@@ -134,6 +143,16 @@ contains-studio-agents/
 - **tool-evaluator** - Choose tools that actually help
 - **workflow-optimizer** - Eliminate workflow bottlenecks
 
+### Offrun Specialized (`offrun-specialized/`)
+- **ai-training-optimizer** - Optimize AI/ML training models for fitness data
+- **battery-performance-guardian** - Maximize battery life during GPS tracking
+- **flutter-fitness-developer** - Build Flutter fitness apps with native performance
+- **gps-fusion-expert** - Enhance GPS accuracy with sensor fusion algorithms
+- **health-connect-master** - Integrate Google Health Connect and Apple HealthKit
+- **interval-training-designer** - Create adaptive interval training programs
+- **offline-first-architect** - Design robust offline-first mobile architectures
+- **track-algorithm-specialist** - Implement advanced running track detection algorithms
+
 ## 🎁 Bonus Agents
 - **studio-coach** - Rally the AI troops to excellence
 - **joker** - Lighten the mood with tech humor
@@ -153,6 +172,31 @@ Some agents trigger automatically in specific contexts:
 3. **Trust the expertise** - Agents are designed for their specific domains
 4. **Iterate quickly** - Agents support the 6-day sprint philosophy
 
+## 🏃 6-Day Sprint Philosophy
+
+The studio operates on aggressive 6-day sprint cycles to maximize learning and minimize waste. Every agent is designed to support this rapid iteration model.
+
+### Why 6-Day Sprints?
+- **Fast Feedback**: Get real user data before over-building
+- **Momentum**: Ship something meaningful every week
+- **Focus**: No time for feature creep or perfectionism
+- **Learning**: Fail fast, learn faster, succeed fastest
+
+### Sprint Structure
+```
+Day 1-2: Planning & Core Implementation
+Day 3-4: Integration & Enhancement
+Day 5: Testing & Polish
+Day 6: Launch Preparation & Documentation
+```
+
+### Agent Sprint Principles
+1. **Day 1 Deliverables**: Every agent must produce something usable on day one
+2. **Iterative Output**: Better to ship 80% today than 100% next sprint
+3. **Quick Pivots**: Agents must adapt when data shows a different path
+4. **Daily Progress**: Visible progress every single day
+5. **Launch Ready**: By day 6, it ships or it's cut
+
 ## 🔧 Technical Details
 
 ### Agent Structure
@@ -164,11 +208,28 @@ Each agent includes:
 - **System prompt**: Detailed expertise and instructions
 
 ### Adding New Agents
+
+#### Core Requirements
 1. Create a new `.md` file in the appropriate department folder
 2. Follow the existing format with YAML frontmatter
 3. Include 3-4 detailed usage examples
 4. Write comprehensive system prompt (500+ words)
 5. Test the agent with real tasks
+
+#### 6-Day Sprint Alignment
+When creating new agents, ensure they:
+- **Can deliver value within 1-2 days** - No agent task should take longer
+- **Support iterative development** - Ship incomplete but functional
+- **Enable quick wins** - Identify what can ship on day 1
+- **Facilitate rapid testing** - Get feedback before perfecting
+- **Have clear daily milestones** - Know what "done" means each day
+
+#### Sprint-Optimized Agent Design
+- **Bias for action**: Agents should default to doing, not discussing
+- **80/20 focus**: Deliver 80% of value with 20% of effort
+- **Fail gracefully**: When blocked, pivot rather than stop
+- **Document shortcuts**: Track technical debt for future sprints
+- **Celebrate progress**: Small wins compound into big victories
 
 ## 📊 Agent Performance
 
@@ -206,6 +267,15 @@ Use this checklist when creating or modifying agents for your specific needs:
 - [ ] **Best Practices**: Specific methodologies and approaches
 - [ ] **Constraints**: What the agent should/shouldn't do
 - [ ] **Success Metrics**: How to measure agent effectiveness
+
+#### ⏱️ 6-Day Sprint Alignment
+- [ ] **Day 1-2 Capabilities**: Agent can deliver initial value within first 2 days
+- [ ] **Iterative Outputs**: Supports shipping 80% solutions that can be refined
+- [ ] **Quick Pivots**: Can change direction based on early feedback
+- [ ] **Daily Deliverables**: Produces tangible progress every single day
+- [ ] **Sprint Velocity**: Optimized for speed over perfection
+- [ ] **Launch Readiness**: Can prepare features for day 6 deployment
+- [ ] **Technical Debt Tracking**: Documents shortcuts for future improvement
 
 #### 🎯 Required Examples by Agent Type
 
@@ -248,6 +318,42 @@ Use this checklist when creating or modifying agents for your specific needs:
 - [ ] **Performance**: Completes tasks within reasonable timeframes
 - [ ] **Documentation**: Examples accurately reflect real usage patterns
 
+#### 📅 Sprint Timeline Templates
+
+**Engineering Agents (6-Day Sprint)**
+```
+Day 1-2: Architecture design, core implementation
+Day 3-4: Feature completion, integration
+Day 5: Testing, bug fixes, optimization
+Day 6: Documentation, deployment preparation
+```
+
+**Design Agents (6-Day Sprint)**
+```
+Day 1: Research, concepts, wireframes
+Day 2-3: Design iterations, component creation
+Day 4: Developer handoff, design system updates
+Day 5: Implementation support, refinements
+Day 6: Final polish, asset preparation
+```
+
+**Marketing Agents (6-Day Sprint)**
+```
+Day 1: Market research, strategy development
+Day 2-3: Content creation, campaign setup
+Day 4-5: Launch execution, monitoring
+Day 6: Performance analysis, optimization
+```
+
+**Product Agents (6-Day Sprint)**
+```
+Day 1: Requirements gathering, prioritization
+Day 2: Sprint planning, stakeholder alignment
+Day 3-4: Feature validation, user testing
+Day 5: Iteration based on feedback
+Day 6: Release planning, success metrics
+```
+
 #### 🔧 Agent File Structure Template
 
 ```markdown
@@ -261,13 +367,29 @@ tools: Tool1, Tool2, Tool3
 You are a [role] who [primary function]. Your expertise spans [domains]. You understand that in 6-day sprints, [sprint constraint], so you [approach].
 
 Your primary responsibilities:
-1. [Responsibility 1]
-2. [Responsibility 2]
+1. **Day 1-2 Focus**: [Initial implementation responsibilities]
+2. **Day 3-4 Focus**: [Core feature development]
+3. **Day 5 Focus**: [Testing and refinement]
+4. **Day 6 Focus**: [Launch preparation]
+5. [Additional responsibility]
 ...
 
-[Detailed system prompt content...]
+**Sprint Execution Strategy**:
+- Day 1: [Specific deliverables]
+- Day 2: [Specific deliverables]
+- Day 3: [Specific deliverables]
+- Day 4: [Specific deliverables]
+- Day 5: [Specific deliverables]
+- Day 6: [Specific deliverables]
 
-Your goal is to [ultimate objective]. You [key behavior traits]. Remember: [key philosophy for 6-day sprints].
+**Quick Win Identification**:
+- [What can ship on day 1]
+- [What provides immediate value]
+- [What validates assumptions fastest]
+
+[Additional detailed system prompt content...]
+
+Your goal is to [ultimate objective]. You believe in shipping fast and learning faster. You understand that done is better than perfect, and that user feedback beats assumptions every time. Remember: in 6-day sprints, momentum is everything—keep shipping, keep learning, keep improving.
 ```
 
 #### 📂 Department-Specific Guidelines
@@ -288,6 +410,35 @@ Modify these elements for your needs:
 - [ ] Modify success metrics for your KPIs
 - [ ] Update department structure if needed
 - [ ] Customize agent colors for your brand
+- [ ] Align all timelines with your sprint cadence
+
+#### 🚫 Sprint Anti-Patterns to Avoid
+
+When creating or customizing agents, avoid these common mistakes:
+
+**Over-Engineering for 6-Day Sprints**
+- ❌ Building perfect solutions that take too long
+- ❌ Creating complex architectures for simple problems
+- ❌ Waiting for complete requirements before starting
+- ✅ Ship 80% solutions and iterate based on feedback
+
+**Perfectionism Blocking Progress**
+- ❌ Polishing features that haven't been validated
+- ❌ Refactoring before shipping v1
+- ❌ Waiting for ideal conditions to launch
+- ✅ Launch early, learn fast, improve constantly
+
+**Ignoring Daily Milestones**
+- ❌ Working in isolation until day 6
+- ❌ No visible progress until the end
+- ❌ Saving testing for the last day
+- ✅ Show progress daily, test continuously
+
+**Feature Creep**
+- ❌ Adding "nice to have" features mid-sprint
+- ❌ Expanding scope without cutting elsewhere
+- ❌ Building for imaginary users
+- ✅ Stay focused on core value, save ideas for next sprint
 
 ## 🤝 Contributing
 
